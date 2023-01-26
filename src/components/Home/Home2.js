@@ -29,7 +29,7 @@ function Home2() {
               <br />
               Me entusiasma poder crear &nbsp;
               <i>
-                <b className="purple">Productos y Tecnologias Web</b>.
+                <b className="purple">Productos</b> y <b className="purple">Tecnologias Web</b>.
               </i>
               <br />
               <br />
@@ -56,7 +56,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h3>Podes encontrarme en las siguientes redes sociales.</h3>
             <p>
-              Sentite libre de <span className="purple">conectar </span>conmigo.
+              Sentite libre de <span className="purple">CONECTAR </span>conmigo.
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">

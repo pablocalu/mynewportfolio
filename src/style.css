@@ -11,7 +11,7 @@ html {
       rgba(12, 10, 22, 0.863)
     );
   
-    --imp-text-color: #E3311D;
+    --imp-text-color: #49AE6F;
   }
   
   .purple {
@@ -155,8 +155,8 @@ html {
   }
   
   .logo {
-    height: 2.8em !important;
-    width: 3.9em !important;
+    height: 4.8em !important;
+    width: 5.9em !important;
   }
   
   .navbar-nav .nav-link {
@@ -194,7 +194,7 @@ html {
     height: 5px;
     width: 0;
     border-radius: 16px;
-    background: #E3311D;
+    background: #4B83F2;
     bottom: 1px;
     left: 0;
     z-index: -1;
@@ -280,17 +280,17 @@ html {
   }
   
   .main-name {
-    color: #E3311D;
+    color: #49AE6F;
   }
   
   .Typewriter__wrapper {
     font-size: 2.2em !important;
-    color: #E3311D !important;
+    color: #49AE6F !important;
     font-weight: 600 !important;
   }
   .Typewriter__cursor {
     font-size: 2.4em !important;
-    color: #E3311D !important;
+    color: #49AE6F !important;
   }
   
   @media (max-width: 767px) {
@@ -394,7 +394,7 @@ html {
   }
   
   .icon-colour {
-    color: #E3311D !important;
+    color:#4B83F2 !important;
   }
   
   /* --------- */
@@ -552,12 +552,11 @@ html {
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.93 !important;
-    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+    border: 1.7px solid #E3311D !important;
     vertical-align: middle !important;
     text-align: center !important;
     border-radius: 5px !important;
     display: table !important;
-    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
   }
@@ -568,11 +567,6 @@ html {
     }
   }
   
-  .tech-icons:hover {
-    transform: scale(1.05) !important;
-    overflow: hidden !important;
-    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-  }
   .tech-icon-images {
     padding: 20px !important;
     line-height: 1.6 !important;
@@ -738,4 +732,3 @@ html {
   .fork-btn-inner::after {
     display: none !important;
   }
-  
