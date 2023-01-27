@@ -11,19 +11,19 @@ function AboutCard() {
             Hola a todos, soy  <span className="purple">Pablo Carro </span>
             de <span className="purple"> Arrecifes, Argentina.</span>
             <br />Soy un Desarrollador Full Stack Jr.
+            <br /> Al ser Argentino, por supuesto que hablo Español😄 , pero tambien tengo un nivel Avanzado de Ingles (C2).
             <br />
-            <br />
-            Ademas de codear, hay otras cosas que me gusta hacer!
+            Siempre estoy aprendiendo, creo que es la clave.. Algunas de mis otras cualidades son..
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Jugar Ajedrez
+              <ImPointRight /> Jugador de Equipo
             </li>
             <li className="about-activity">
-              <ImPointRight /> Jugar Video Juegos
+              <ImPointRight /> Comunicacion
             </li>
             <li className="about-activity">
-              <ImPointRight /> Pasar tiempo con amigos
+              <ImPointRight /> Solucion de problemas
             </li>
           </ul>
         </blockquote>

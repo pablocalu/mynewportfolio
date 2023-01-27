@@ -66,13 +66,13 @@ html {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(178, 121, 216, 0.959);
+    background: #4B83F2;
     border-radius: 12px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(222, 130, 235, 0.911);
+    background: #4B83F2;
     border-radius: 12px;
   }
   
@@ -101,7 +101,7 @@ html {
   
   .navbar-toggler span {
     display: block !important;
-    background-color: #be50f4 !important;
+    background-color: #4B83F2 !important;
     height: 4px !important;
     width: 27px !important;
     margin-top: 5px !important;
@@ -442,7 +442,7 @@ html {
   }
   
   .blockquote-footer {
-    color: #a588c0 !important;
+    color: #4B83F2 !important;
   }
   /* --------- */
   /* Projects */
@@ -462,7 +462,7 @@ html {
   }
   
   .project-card-view {
-    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    box-shadow: 0 4px 5px 3px #4B83F2 !important;
     color: white !important;
     background-color: transparent !important;
     opacity: 0.9 !important;
@@ -472,7 +472,7 @@ html {
   .project-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+    box-shadow: 0 4px 4px 5px #49AE6F !important;
   }
   
   .blog-card {
@@ -485,7 +485,7 @@ html {
   
   .blog-card-view {
     background-color: transparent !important;
-    box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+    box-shadow: 0 3px 3px 2px #4B83F2 !important;
     color: white !important;
     transition: all 0.5s ease 0s !important;
     height: 100% !important;
@@ -503,7 +503,7 @@ html {
   .blog-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+    box-shadow: 0 3px 3px 5px #4B83F2 !important;
   }
   
   .card-img-top {
@@ -653,14 +653,14 @@ html {
   .resume .resume-item {
     padding: 0 0 10px 25px;
     margin-top: -2px;
-    border-left: 2px solid #8a49a8;
+    border-left: 2px solid #4B83F2;
     position: relative;
   }
   
   .resume .resume-item .resume-title {
     line-height: 18px;
     font-size: 0.9em;
-    background: #5234795d;
+    background: #4B83F2;
     padding: 8px 15px;
     display: inline-block;
     font-weight: 600;
@@ -690,7 +690,7 @@ html {
     left: -9px;
     top: 0;
     background: #fff;
-    border: 2px solid #8a49a8;
+    border: 2px solid #4B83F2;
   }
   
   .like-item {
@@ -700,8 +700,8 @@ html {
   }
   
   .like-btn {
-    background-color: #934cce5e !important;
-    border-color: #934cce5e !important;
+    background-color: #4B83F2 !important;
+    border-color: #4B83F2 !important;
     padding: 0.25rem 0.98rem !important;
     border-radius: 5px !important;
     line-height: 1.4 !important;
@@ -710,8 +710,8 @@ html {
   
   .like-btn:hover {
     transform: translateY(-2px) !important;
-    background-color: #a24dd386 !important;
-    border-color: #a24dd386 !important;
+    background-color: #4B83F2 !important;
+    border-color: #4B83F2 !important;
   }
   
   .animate-like {
@@ -726,26 +726,4 @@ html {
     100% {
       transform: scale(1);
     }
-  }
-  
-  .fork-btn {
-    font-size: 1.1em !important;
-    padding-top: 10px !important;
-  }
-  
-  .fork-btn-inner {
-    line-height: 1.4em !important;
-    background-color: #934cce5e !important;
-    padding: 0.25rem 1.1rem !important;
-    vertical-align: middle !important;
-    text-align: center !important;
-  }
-  
-  .fork-btn-inner:hover {
-    transform: translateY(-2px) !important;
-    background-color: #a24dd386 !important;
-    border-color: #a24dd386 !important;
-  }
-  .fork-btn-inner::after {
-    display: none !important;
   }
