@@ -5,10 +5,12 @@ import {
   DiReact,
   DiNodejs,
   DiMongodb,
+  DiSqllite
 } from "react-icons/di";
 import {
   SiFirebase,
   SiNextdotjs,
+  SiExpress,
 } from "react-icons/si";
 
 function Techstack() {
@@ -31,6 +33,12 @@ function Techstack() {
       </Col> 
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiSqllite />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiExpress />
       </Col>
     </Row>
   );
