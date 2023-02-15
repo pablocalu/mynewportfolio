@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hola a todos, soy  <span className="purple">Pablo Carro </span>
             de <span className="purple"> Arrecifes, Argentina.</span>
-            <br />Soy un Desarrollador Full Stack Jr.
+            <br />Soy un Desarrollador Full Stack.
             <br /> Al ser Argentino, por supuesto que hablo Español😄 , pero tambien tengo un nivel Avanzado de Ingles (C2).
             <br />
             Siempre estoy aprendiendo, creo que es la clave.. Algunas de mis otras cualidades son..
