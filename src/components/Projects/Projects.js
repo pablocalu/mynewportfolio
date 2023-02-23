@@ -6,6 +6,7 @@ import kinema from '../../Assets/Kinema.png'
 import recipes from '../../Assets/recipesapp.png'
 import poker from '../../Assets/poker3.png'
 import casual from '../../Assets/casual1.png'
+import uber from '../../Assets/uber.jpg'
 
 function Projects() {
   return (
@@ -39,17 +40,6 @@ function Projects() {
               ghLink="https://github.com/poker-data"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={recipes}
-              isBlog={false}
-              title="Recipes App"
-              description="App de recetas de cocina. Realizada en el BootCamp de Henry, consumiendo datos de una API, y realizando base datos propia, renderizado en front, ordenamientos y busquedas de recetas. Realizada con React, Css puro, Node, Express, Sqlite y Sequelize."
-              ghLink="https://github.com/pablocalu/pi-food"
-              demoLink=""              
-            />
-          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={casual}
@@ -57,7 +47,27 @@ function Projects() {
               title="Casual Ecommerce"
               description="Ecommerce realizado para poner en practica Next.js. Se utilizó React, Tailwind y Next.js para front-end, para autorización de usuarios se utilizó NextAuth y las claves se encriptaron con bcrypt, como pasarela de pago se aplicó Paypal, se utilizo js-cookies para la persistencia de datos, react-toastify para las notificaciones y como base de datos MongoDB."
               ghLink="https://github.com/pablocalu/ecomm"
-              demoLink=""              
+              demoLink="https://youtu.be/KOdyWBT8Rnc"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={uber}
+              isBlog={false}
+              title="Uber Clon"
+              description="Uber Clon con React Native. Utilice Tailwind CSS para los estilos, la API de matriz de distancia de Google para calcular tiempo y distancia, API de Google direcciones para una navegacion real, API de Google Places para lugares reales, React Native Navigation para navegar entre pantallas y React Native Elements para mejorar el diseño."
+              ghLink="https://github.com/pablocalu/ubercloning"
+              demoLink="https://youtu.be/gPK1h1bLM50"              
+              />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={recipes}
+              isBlog={false}
+              title="Recipes App"
+              description="App de recetas de cocina. Realizada en el BootCamp de Henry, consumiendo datos de una API, y realizando base datos propia, renderizado en front, ordenamientos y busquedas de recetas. Realizada con React, Css puro, Node, Express, Sqlite y Sequelize."
+              ghLink="https://github.com/pablocalu/pi-food"
+              demoLink="https://youtu.be/HRRYGEXuLls"              
             />
           </Col>
         </Row>
