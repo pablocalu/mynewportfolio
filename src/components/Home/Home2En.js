@@ -9,15 +9,15 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home2() {
+function Home2En() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={12} className="home-about-social">
-            <h3>Podes encontrarme en las siguientes redes sociales.</h3>
+            <h3>You can find me in the following social networks.</h3>
             <p>
-              Sentite libre de <span className="purple">CONECTAR </span>conmigo.
+              Feel free to <span className="purple">CONNECT </span>with me.
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -67,4 +67,4 @@ function Home2() {
     </Container>
   );
 }
-export default Home2;
+export default Home2En;

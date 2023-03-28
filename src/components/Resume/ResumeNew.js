@@ -6,12 +6,17 @@ import pdf from "../../Assets/../Assets/PabloCarro.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { useSelector } from "react-redux";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
   "https://raw.githubusercontent.com/pablocalu/mynewportfolio/master/src/Assets/PabloCarro.pdf";
 
+const resumeEnLink = "https://raw.githubusercontent.com/pablocalu/mynewportfolio/master/src/Assets/PabloCarroEn.pdf"
+
 function ResumeNew() {
+
+  const language = useSelector(state => state.languages.language)
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -30,15 +35,15 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;{language === 'es' ? 'Descargar CV': 'Download CV'}
           </Button>
         </Row>
 
         <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
+          <Document file={language === 'es' ? resumeLink : resumeEnLink} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
-          <Document file={resumeLink} className="d-flex justify-content-center">
+          <Document file={language === 'es' ? resumeLink : resumeEnLink} className="d-flex justify-content-center">
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>

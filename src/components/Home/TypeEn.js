@@ -1,12 +1,12 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-function Type() {
+function TypeEn() {
   return (
     <Typewriter
       options={{
         strings: [
-          "Desarrollador Full Stack",
+          "Full Stack Developer",
           "JavaScript",
           "React",
           "Node",
@@ -20,4 +20,4 @@ function Type() {
   );
 }
 
-export default Type;
+export default TypeEn;

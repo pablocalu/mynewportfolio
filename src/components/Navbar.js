@@ -13,12 +13,17 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import ReactCountryFlag from "react-country-flag"
 import { CgFileDocument } from "react-icons/cg";
+import { useDispatch, useSelector } from "react-redux";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+
+  const language = useSelector(state => state.languages.language)
+
+  const dispatch = useDispatch()
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -26,6 +31,17 @@ function NavBar() {
     } else {
       updateNavbar(false);
     }
+  }
+
+  const changeLanguage = () => {
+    if(language === 'es'){
+      dispatch({ type: 'en'})
+      console.log(language)
+    }
+    if(language === 'en'){
+      dispatch({ type: 'es'})
+      console.log(language)
+    }  
   }
 
   window.addEventListener("scroll", scrollHandler);
@@ -65,7 +81,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Sobre Mi
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {language === 'es' ? 'Sobre Mi' : 'About Me'}
               </Nav.Link>
             </Nav.Item>
 
@@ -78,7 +94,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Proyectos
+                {language === 'es' ? 'Proyectos' : 'Projects'}
               </Nav.Link>
             </Nav.Item>
 
@@ -89,6 +105,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                onClick={() => changeLanguage()}
+              >
+                {language === 'es' ? <ReactCountryFlag countryCode="ES" />  : <ReactCountryFlag countryCode="US" />}
+
+                {language === 'es' ? ' Español' : ' English'}
               </Nav.Link>
             </Nav.Item>
 

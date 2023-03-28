@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import {
   DiJavascript1,
   DiReact,
@@ -11,6 +11,7 @@ import {
   SiFirebase,
   SiNextdotjs,
   SiExpress,
+  SiTailwindcss
 } from "react-icons/si";
 
 function Techstack() {
@@ -39,6 +40,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiExpress />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss />
       </Col>
     </Row>
   );

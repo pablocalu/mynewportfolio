@@ -2,16 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
 import cat from '../../Assets/pablo2.png'
 import Toolstack from "./Toolstack";
-import { useSelector } from "react-redux";
-import AboutEn from "./AboutEn";
+import AboutCardEn from "./AboutCardEn";
 
-function About() {
-  const language = useSelector(state => state.languages.language)
+function AboutEn() {
 
-  if(language === 'es'){
     return (
       <Container fluid className="about-section">
         <Particle />
@@ -26,9 +22,9 @@ function About() {
               }}
             >
               <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Te cuento un poco de <strong className="purple">mi</strong>
+              I'll tell you a little bit <strong className="purple">about myself</strong>
               </h1>
-              <Aboutcard />
+              <AboutCardEn/>            
             </Col>
             <Col
               md={5}
@@ -39,25 +35,17 @@ function About() {
             </Col>
           </Row>
           <h1 className="project-heading">
-            Mi <strong className="purple">Stack </strong>
+            My <strong className="purple">Stack </strong>
           </h1>
-  
           <Techstack />
-  
           <h1 className="project-heading">
-            <strong className="purple2">Herramientas</strong> que uso
+            <strong className="purple2">Tools</strong> I use
           </h1>
           <Toolstack />
         </Container>
       </Container>
     );
-  }
-
-  if(language === 'en'){
-    return (
-      <AboutEn/>
-    )
-  }
+  
 }
 
-export default About;
+export default AboutEn;
